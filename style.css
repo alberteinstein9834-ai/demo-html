@@ -1,5 +1,6 @@
 
- .nav{
+
+ /* .nav{
     height: 80px;
     background-color: burlywood;
  }
@@ -27,4 +28,38 @@
  }
 .nav ul li a:hover{
     color: tomato;
+} */
+*{
+   margin:0
+}
+.nav{
+   margin: 0px;
+   height: 90px;
+   background-color: powderblue;
+}
+.nav img{
+   float: left;
+    line-height: 80px;
+    margin-left: 170px;
+    margin-top: 20px;
+}
+.nav ul{
+    float: right;
+    list-style-type: none ;
+    margin-right: 160px;
+
+ }
+.nav ul li{
+    float: left;
+    line-height: 80px;
+    margin: 0 10px;
+
+ }
+ .nav ul li a{
+
+    text-decoration: none;
+    color: black;
+ }
+.nav ul li a:hover{
+    color: brown;
 }
