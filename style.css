@@ -1,45 +1,19 @@
 
 
- /* .nav{
-    height: 80px;
-    background-color: burlywood;
- }
- .nav h1{
-    float: left;
-    line-height: 80px;
-    margin-left: 170px;
- }
- .nav ul{
-    float: right;
-    list-style-type: none ;
-    margin-right: 160px;
-
- }
- .nav ul li{
-    float: left;
-    line-height: 80px;
-    margin: 0 10px;
-
- }
- .nav ul li a{
-
-    text-decoration: none;
-    color: black;
- }
-.nav ul li a:hover{
-    color: tomato;
-} */
 *{
    margin:0
 }
 .nav{
-   margin: 0px;
-   height: 90px;
-   background-color: powderblue;
+  
+   /* height: 90px; */
+   height: 12vh;
+   background-color: black;
+   box-shadow: 2px 2px 2px blue;
+
 }
 .nav img{
    float: left;
-    line-height: 80px;
+    line-height: 10vh;
     margin-left: 170px;
     margin-top: 20px;
 }
@@ -61,5 +35,44 @@
     color: black;
  }
 .nav ul li a:hover{
-    color: brown;
+    color: tomato;
+}
+.nav ul li a:active{
+   color: purple;
+}
+.nav ul li a:visited{
+   color: white;
+}
+
+.content{
+   clear: both;
+   /* background-color: grey; */
+   /* height: 515px; */
+   height: 70vh;
+}
+.card1 , .card2{
+   height: 100px;
+   width: 100px;
+   background-color: white;
+   margin-top: 25vh;
+   border-radius: 8px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.card1{
+   float: left;
+   margin-left: 176px;
+   
+}
+.card2{
+   float: right;
+   margin-right: 176px;
+}
+
+
+
+.footer{
+   background-color: black;
+   /* height: 100px; */
+   height: 18vh;
 }
