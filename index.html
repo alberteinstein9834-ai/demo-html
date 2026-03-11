@@ -6,144 +6,75 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="2" height="100%">
-      <tr>
-        <td rowspan="3">Day</td>
-        <td colspan="3">Seminar</td>
-        <!-- <td>is</td> -->
-        <!-- <td>hd</td> -->
-      </tr>
-      <tr>
-        <!-- <td>s1</td> -->
-        <td colspan="2">Schedule</td>
-        <!-- <td>kjds</td> -->
-        <td rowspan="2">Topic</td>
-      </tr>
-      <tr>
-        <!-- <td>11</td> -->
-        <td>Begin</td>
-        <td>End</td>
-        <!-- <td>l2</td> -->
-      </tr>
-      <tr>
+    
+    <script>
+        // dispaly outout
+
+        // console.log("hello world");
+        // console.warn("this is a warning");
+        // console.info("this is information");
+        // alert("alert");
+        // console.error("this is error");
+        // console.log("20+25");
+
+        // variable legal and illegal
+
+         var firstName ; // camel case writing
+         var Firstname ; // pascal case writing
+         var first_name; // snake case writing
+         var first1name; // number case writing
+         var $first$name; // symbol case writing
+
+
+        // 03 math operation
+
+        // var num1 = 5;
+        // var num2 = 10;
+        // var total = num1 + num2;
+        // console.log(total);
+
+// string operation
+
+        // var num1 = "5";
+        // var num2 = "10";
+        // var total = num1 + num2;
+        // console.log(total);
+
+        //  var num1 = 50;
+        // var num2 = 20;
+        // var total = num1 ^ num2;
+        // console.log(total);
+
+        var a = 5;
+        var b = 10;
+
+        a = a^b; //5+10 = 15
+        b = a^b; // 15-5 = 10
+        a = a^b; //10-5 = 5
+
+        console.log(a,b);
+
+
         
-        <td rowspan="2">Monday</td>
-        <td rowspan="2">8:00 a.m</td>
-        <td rowspan="2">5:00 p.m</td>
-        <td>Introduction to XML</td>
-      </tr>
-      <tr>
-        <!-- <td>as</td> -->
-        <!-- <td>8:00 p.m</td> -->
-        <!-- <td>11:00 a.m</td> -->
-        <td>Validity: DTD and Relax ng</td>
-      </tr>
-      <tr>
+        var a = 5;
+        var b = 10;
+
+        a = a+b; //5+10 = 15
+        b = a-b; // 15-10 = 5
+        a = a-b; //10-5 = 5
+
+        console.log(a,b);
+
+        var a = 5;
+        var b = 10;
+
         
-        <td rowspan="3">Tuesday</td>
-        <td>11:00 a.m</td>
-        <td>2:00 a.m</td>
-        <td>Xpath</td>
-      </tr>
-      <tr>
-        <!-- <td>ks</td> -->
-        <td>2:00 a.m</td>
-        <td>8:00 a.m</td>
-        <td rowspan="2">X Transformation</td>
+        [a,b]=[b,a]
+        console.log(a,b);
 
-      </tr>
-      <tr>
-        <!-- <td>akjh</td> -->
-        <!-- <td>alskjsa</td> -->
-        <td>2:00 a.m</td>
-        <td>2:00 a.m</td>
-      </tr>
-      <tr>
-        <td>Wednesday</td>
-        <td>2:00 a.m</td>
-        <td>2:00 a.m</td>
-        <td>XSL Formating object</td>
-      </tr>
-    </table>
+        
 
-    <br>
-      <!-- forms -->
-
-      <p>Contact details</p>
-
-      <fieldset border="2">
-        <legend>
-        </legend>
-
-        <form >
-       
-
-       <p>Please enter your personal details</p>
-       
-       <label for="First name">First name:<input type="text" placeholder="shahwaiz" id="First name"></label> <br><br>
-       <label for="Last name">Last name:<input type="text" placeholder="Irshad" id="Last name"></label> <br><br>
-       <label for="student address">Student address:<input type="text" placeholder="tecstem" id="Student address"></label> <br><br>
-       <label for="Town/City">Town/City:<input type="text" placeholder="lahore" id="Town/City"></label> <br><br>
-       <label for="Passcode/Zip">Passcode/Zip:<input type="text" placeholder="dw1" id="Passcode/Zip"></label> <br><br>
-       <label for="Telephone">Telephone:<input type="number" placeholder="042*******" id="Telephone"></label> <br><br>
-       <label for="mobile">Mobile:<input type="number" placeholder="0300*******" id="mobile"></label> <br><br>
-       <span><label for="Email address">Email address<input type="email" placeholder="alberteinstein@gmail.com" id="Email address"></label></span> <br> <br>
-
-        <pre>       Field marked * are required      
-
-               <input type="submit"> 
-        </pre>
-       
-
-       </form>
-      </fieldset>
-      <br>
-
-      <table border="2">
-        <tr>
-          <td>Name</td>
-          <td> <input type="text"></td>
-        </tr>
-        <tr>
-          <td>Password</td>
-          <td> <input type="text"></td>
-        </tr>
-        <tr>
-          <td>confirm password</td>
-          <td> <input type="text"></td>
-        </tr>
-        <tr>
-          <td>Email</td>
-          <td> <input type="email"></td>
-        </tr>
-        <tr>
-          <td>Gender</td>
-          <td> <label for="Male">male:<input type="radio" id="male" name="gender"></label>
-
-        <label for="FeMale">Female:<input type="radio" id="Female" name="gender"></label></td>
-        </tr>
-        <tr>
-          <td>CNIC</td>
-          <td> <input type="number"></td>
-        </tr>
-        <tr>
-          <td>Country</td>
-          <td> <input type="text"></td>
-        </tr>
-        <tr>
-          <td>City</td>
-          <td> <input type="text"></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td> register</td>
-        </tr>
-      </table>
-      
-       
-      
-
-
+    </script>
 
 </body>
 </html>
