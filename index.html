@@ -33,7 +33,7 @@
         // var total = num1 + num2;
         // console.log(total);
 
-// string operation
+// 04 string operation ..................................................
 
         // var num1 = "5";
         // var num2 = "10";
@@ -110,53 +110,124 @@
         // var name = prompt("enter your name");
         // document.write(name);
 
-        var name = "shahwaiz";
-        var name1 = prompt("enter your name ", name);
-        console.log(name1, typeof name1);
+        // var name = "shahwaiz";
+        // var name1 = prompt("enter your name ", name);
+        // console.log(name1, typeof name1);
 
-         var age = 25;
-         var age1 = prompt("enter your age ", age);
-        console.log(age1, typeof age1);
+        //  var age = 25;
+        //  var age1 = prompt("enter your age ", age);
+        // console.log(age1, typeof age1);
 
-        var gender = true;
-        var gender1 = prompt("enter your gender ", gender);
-        console.log(gender1, typeof gender1);
+        // var gender = true;
+        // var gender1 = prompt("enter your gender ", gender);
+        // console.log(gender1, typeof gender1);
 
-         var avg = 2.4;
-         var avg1 = prompt("enter your avg ", avg);
-        console.log(avg1, typeof avg1);
+        //  var avg = 2.4;
+        //  var avg1 = prompt("enter your avg ", avg);
+        // console.log(avg1, typeof avg1);
 
-         var bigint = 126521437632839724219646535n;
-          var bigint1 = prompt("enter your bigint ", bigint);
-        console.log(bigint1, typeof bigint1);
+        //  var bigint = 126521437632839724219646535n;
+        //   var bigint1 = prompt("enter your bigint ", bigint);
+        // console.log(bigint1, typeof bigint1);
 
-         var bigint = 126521437632839724216657298733764287295;
-         var bigint1 = prompt("enter your bigint ", bigint);
-        console.log(bigint1, typeof bigint1);
+        //  var bigint = 126521437632839724216657298733764287295;
+        //  var bigint1 = prompt("enter your bigint ", bigint);
+        // console.log(bigint1, typeof bigint1);
 
 
-        var arr = ["subhan", "shahwaiz"];
-        var arr1 = prompt("enter your arr", arr);
-        console.log(arr1, typeof arr1);
+        // var arr = ["subhan", "shahwaiz"];
+        // var arr1 = prompt("enter your arr", arr);
+        // console.log(arr1, typeof arr1);
 
-          var object = {"name": "atif", "age": 38};
-          var object1 = prompt("enter your object",object)
-        console.log(object1, typeof object1);
+        //   var object = {"name": "atif", "age": 38};
+        //   var object1 = prompt("enter your object",object)
+        // console.log(object1, typeof object1);
 
-        var und;
-        var und1 = prompt("enter your arr", und);
-        console.log(und1, typeof und1);
+        // var und;
+        // var und1 = prompt("enter your arr", und);
+        // console.log(und1, typeof und1);
 
-        var nul = null;
-         var nul1 = prompt("enter your arr", nul)
-        console.log(nul1, typeof nul1);
+        // var nul = null;
+        //  var nul1 = prompt("enter your arr", nul)
+        // console.log(nul1, typeof nul1);
 
         //   var symbol = Symbol("^");
         //    var symbol1 = prompt("enter your symbol", symbol);
         // console.log(symbol1, typeof symbol1);
 
 
+        // 05 type casting .............................................................
 
+        // var num1 = prompt("enter your number");
+        // num1 = parseInt(num1);
+        //  num1 = parseFloat(num1);
+        //   num1 = Number(num1);
+        // console.log(num1, typeof num1);
+
+        //05 if else if else condition.............................................................................
+        
+        // var marks = 80;
+
+        // if(marks ===90){
+        //     console.log("your marks is 90");
+        // }
+        // else if (marks === 80){
+        //     console.log("your marks s not 90");
+        // }
+            
+        // else{
+        //     console.log("your marks is not 90");
+        // }
+
+        // var marks = 80;
+
+        // if (marks >= 90 && marks <= 100 ){
+        //     console.log("your grade is A");
+        // }
+        // else if(marks > 100 ){
+        //     console.log("you marks is could not be more than 100")
+        // }
+        // else if(marks >= 80 && marks <= 90  ){
+        //     console.log("your grade is B")
+        // }
+
+        //............vanila...
+
+        // var marks = 91;
+        // var age = 20;
+
+        // if (marks > 90 || age < 19){
+        //     console.log("you have your exam")
+        // }
+
+        //.......ecma............
+
+        // var marks = 80;
+        // (marks = 90) & console.log("you have 90 marks")
+
+        //  (marks === 90) ? console.log("you have passed ") : console.log("you have not 90 marks ")
+
+        //.............test........................................
+
+        var education =  prompt ("enter education");
+        education = Number(education);
+        var height = prompt("enter height");
+        height = Number(height);
+        var age = prompt("enter age");
+        age = Number(age);
+
+        if (education === 12 || height === 5.8 ){
+            console.log("you have passed ");
+        }
+        else if(age === 18 || height === 5.8 ){
+            console.log("you have passed ");
+        }
+        else if(education === 12 || age === 18 ){
+            console.log("you have passed ");
+        }
+        else {
+            console.log("you have fails ");
+        }
 
 
         
