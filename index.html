@@ -1,238 +1,514 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+   <style>
+        *{
+            margin: 0;
+       
+        }
+        
+        
+    </style>
+  <body>
+
+    <!-- <button onclick="sm()">click me</button> -->
+    <div id="demo" style="height: 50vh; width: 50%;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitat....
+    </div>
+   
+
     <script>
-        // dispaly outout
+      // dispaly outout
 
-        // console.log("hello world");
-        // console.warn("this is a warning");
-        // console.info("this is information");
-        // alert("alert");
-        // console.error("this is error");
-        // console.log("20+25");
+      // console.log("hello world");
+      // console.warn("this is a warning");
+      // console.info("this is information");
+      // alert("alert");
+      // console.error("this is error");
+      // console.log("20+25");
 
-        // variable legal and illegal
+      // variable legal and illegal
 
-         var firstName ; // camel case writing
-         var Firstname ; // pascal case writing
-         var first_name; // snake case writing
-         var first1name; // number case writing
-         var $first$name; // symbol case writing
+      //  var firstName ; // camel case writing
+      //  var Firstname ; // pascal case writing
+      //  var first_name; // snake case writing
+      //  var first1name; // number case writing
+      //  var $first$name; // symbol case writing
+
+      // 03 math operation
+
+      // var num1 = 5;
+      // var num2 = 10;
+      // var total = num1 + num2;
+      // console.log(total);
+
+      // 04 string operation ..................................................
+
+      // var num1 = "5";
+      // var num2 = "10";
+      // var total = num1 + num2;
+      // console.log(total);
+
+      //  var num1 = 50;
+      // var num2 = 20;
+      // var total = num1 ^ num2;
+      // console.log(total);
+
+      // var a = 5;
+      // var b = 10;
+
+      // a = a^b; //5+10 = 15
+      // b = a^b; // 15-5 = 10
+      // a = a^b; //10-5 = 5
+
+      // console.log(a,b);
+
+      // var a = 5;
+      // var b = 10;
+
+      // a = a+b; //5+10 = 15
+      // b = a-b; // 15-10 = 5
+      // a = a-b; //10-5 = 5
+
+      // console.log(a,b);
+
+      // var a = 5;
+      // var b = 10;
+      // [a,b]=[b,a]
+      // console.log(a,b);
+
+      // data types .................................................................
+
+      // var name = "shahwaiz";
+      // console.log(name, typeof name);
+
+      // var age = 25;
+      // console.log(age, typeof age);
+
+      // var gender = true;
+      // console.log(gender, typeof gender);
+
+      // var avg = 2.4;
+      // console.log(avg, typeof avg);
+
+      // var bigint = 126521437632839724219646535n;
+      // console.log(bigint, typeof bigint);
+
+      // var bigint = 126521437632839724216657298733764287295;
+      // console.log(bigint, typeof bigint);
+
+      // var symbol = Symbol("symbol");
+      // console.log(symbol, typeof symbol);
+
+      // var arr = ["subhan", "shahwaiz"];
+      // console.log(arr, typeof arr);
+
+      // var object = {"name": "atif", "age": 38};
+      // console.log(object, typeof object);
+
+      // var und;
+      // console.log(und, typeof und);
+
+      // var nul = null;
+      // console.log(nul, typeof nul);
+
+      // take input from user ...................................................................
+
+      // var name = prompt("enter your name");
+      // document.write(name);
+
+      // var name = "shahwaiz";
+      // var name1 = prompt("enter your name ", name);
+      // console.log(name1, typeof name1);
+
+      //  var age = 25;
+      //  var age1 = prompt("enter your age ", age);
+      // console.log(age1, typeof age1);
+
+      // var gender = true;
+      // var gender1 = prompt("enter your gender ", gender);
+      // console.log(gender1, typeof gender1);
+
+      //  var avg = 2.4;
+      //  var avg1 = prompt("enter your avg ", avg);
+      // console.log(avg1, typeof avg1);
+
+      //  var bigint = 126521437632839724219646535n;
+      //   var bigint1 = prompt("enter your bigint ", bigint);
+      // console.log(bigint1, typeof bigint1);
+
+      //  var bigint = 126521437632839724216657298733764287295;
+      //  var bigint1 = prompt("enter your bigint ", bigint);
+      // console.log(bigint1, typeof bigint1);
+
+      // var arr = ["subhan", "shahwaiz"];
+      // var arr1 = prompt("enter your arr", arr);
+      // console.log(arr1, typeof arr1);
+
+      //   var object = {"name": "atif", "age": 38};
+      //   var object1 = prompt("enter your object",object)
+      // console.log(object1, typeof object1);
+
+      // var und;
+      // var und1 = prompt("enter your arr", und);
+      // console.log(und1, typeof und1);
+
+      // var nul = null;
+      //  var nul1 = prompt("enter your arr", nul)
+      // console.log(nul1, typeof nul1);
+
+      //   var symbol = Symbol("^");
+      //    var symbol1 = prompt("enter your symbol", symbol);
+      // console.log(symbol1, typeof symbol1);
+
+      // 05 type casting .............................................................
+
+      // var num1 = prompt("enter your number");
+      // num1 = parseInt(num1);
+      //  num1 = parseFloat(num1);
+      //   num1 = Number(num1);
+      // console.log(num1, typeof num1);
+
+      //05 if else if else condition.............................................................................
+
+      // var marks = 80;
+
+      // if(marks ===90){
+      //     console.log("your marks is 90");
+      // }
+      // else if (marks === 80){
+      //     console.log("your marks s not 90");
+      // }
+
+      // else{
+      //     console.log("your marks is not 90");
+      // }
+
+      // var marks = 80;
+
+      // if (marks >= 90 && marks <= 100 ){
+      //     console.log("your grade is A");
+      // }
+      // else if(marks > 100 ){
+      //     console.log("you marks is could not be more than 100")
+      // }
+      // else if(marks >= 80 && marks <= 90  ){
+      //     console.log("your grade is B")
+      // }
+
+      //............vanila...
+
+      // var marks = 91;
+      // var age = 20;
+
+      // if (marks > 90 || age < 19){
+      //     console.log("you have your exam")
+      // }
+
+      //.......ecma............
+
+      // var marks = 80;
+      // (marks = 90) & console.log("you have 90 marks")
+
+      //  (marks === 90) ? console.log("you have passed ") : console.log("you have not 90 marks ")
+
+      //.............test........................................
+
+      // var education =  prompt ("enter education");
+      // education = Number(education);
+      // var height = prompt("enter height");
+      // height = Number(height);
+      // var age = prompt("enter age");
+      // age = Number(age);
+
+      // if (education === 12 || height === 5.8 ){
+      //     console.log("you have passed ");
+      // }
+      // else if(age === 18 || height === 5.8 ){
+      //     console.log("you have passed ");
+      // }
+      // else if(education === 12 || age === 18 ){
+      //     console.log("you have passed ");
+      // }
+      // else {
+      //     console.log("you have fails ");
+      // }
+
+      //06.....Arrays................................................
+
+      // var arr=[]
+      // arr[0]=5
+      // arr[2]=10
+      // console.log(arr, typeof arr);
+
+      // var arr=["shahwaiz","subhan","kinza","rabia"]
+      // arr.push("ali")
+      // arr.pop("kinza")
+      // arr.push("anum","kinza")
+      // arr.pop();
+
+      // arr.unshift("abid")
+      // arr.unshift("asad")
+      // arr.shift()
+
+      // arr.splice(0,0,"amna")
+      // arr.splice(1,1)
+
+      // arr.splice(0,1,"amna","shazzy")
+      // arr[0]="ayesha"
+      // var arr2=arr.slice(1,3)
+
+      // console.log(arr)
+      // console.log(arr2)
+
+      //..........test...................
+
+      // var arr=["shahwaiz","subhan","kinza","rabia"]
+      // arr.push(arr.pop())
+      // arr.pop(arr.push("aslan"))
+
+      // console.log(arr)
+
+      // assignment.....................
+
+      // var arr=[1,2,3,4,5,6,7,8,9,10]
+      // var arr2=arr.slice(-4)
+      // var arr3=arr.slice(0,2)
+      // var arr4=arr.slice(-2)
+      // console.log(arr2)
+      // console.log(arr3,arr4)
+
+      // console.log(arr[9],arr[8],arr[7],arr[6]);
+      // console.log(arr[0],arr[1],arr[8],arr[9]);
+
+      // a = 10;
+      // b = a;
+      // console.log(a, b)
+      // a = 12;
+      // console.log(a,b)
+
+      // var x = ["Wahab","Zarak"]
+      // var y = x;
+      // console.log(x,y)
+      // x[1] = "Zarak";
+      // console.log(x,y)
+
+      // var arr = ["Data 1"]
+      // var arr2 = arr.concat("Data2")
+      // console.log(arr2)
+
+      // var arr1 = ["Wahab","Zarak"]
+      // var arr2 = ["Subhan","Shawaiz"]
+      // var arr3 = arr1.concat(arr2)
+      // console.log(arr3)
+
+      //LOOPs.................................................................
+
+      // for(var i = 0; i < 10; i++){
+      //     console.log(i)
+      // }
+      // for(var i = 1; i < 10; i++){
+      //     console.log(i,"Pakistan")
+      // }
+
+      // var i = 1;
+      // while(i <= 10){
+      //     console.log("I LOVE PAKISTAN")
+      //     i++
+      // }
+
+      // var i = 5;
+      // do{
+      //     console.log(i,"PAKISTAN")
+      //     i++;
+      // }while(i < 4)
+
+      // var arr = ["Akash", "Atif","Ahtsham","AMIR"]   //for in loop show indexes of items
+      // for(i in arr){
+      //     console.log(i)
+      // }
+
+      // for(i of arr){
+      //     console.log(i,arr)
+      // }
+
+      //10 JavaScript Hoisting Interview Question
+      //Hoisting means initializing variable after call
+
+      // var a; //Declare
+      // console.log(a) // Call
+      // a = 10; //Initialize
+
+      // ba = 20;
+      // console.log(b)
+      // let ba;
+
+      // const bab = 10; //In const initializing and Declaration must be at the same time.
+
+      //......11 Math Operations..............................
+
+      // var a = Math.random() * 10
+      // console.log(a)
+
+      // var a = Math.round(4.554)
+      // console.log(a)
+
+      // var c = Math.floor(4.99999)
+      // console.log(c)
+
+      //  var d = Math.ceil(5.1111)
+      // console.log(d)
+
+      // guess number game...............................................
+
+      // var guessnumber = Math.round(Math.random()* 10)
+      // console.log(guessnumber);
+
+      // var num1 = Number(prompt("enter your number"))
+      // if(guessnumber===num1){
+      //     console.log("you got the num ...")
+
+      // }
+      // else{
+      //     console.log("you failed it")
+      // }
+
+      //function most important...........
+      // function sm(a,b){
+      //     console.log("hello world", a,b)
+      // }
+
+      // function sm(){
+      //     var num1 = prompt("enter first num")
+      //     var num2 = prompt("enter second num")
+      //     console.log(parseInt(num1)+parseInt(num2))
+
+      // }
+
+      // sm()
+      //................test..........
+      //  function sm(){
+
+      //     var guessnumber = Math.round(Math.random()* 10)
+      //     console.log(guessnumber);
+
+      //     var num1 = Number(prompt("enter your number"))
+      //     if(guessnumber===num1){
+      //         console.log("you got the num ...")
+
+      //     }
+      //     else{
+      //         console.log("you failed it")
+      //     }
+
+      //     }
+      //.........simple function............
+
+      // function sm(){
+      //     console.log("hello world")
+
+      // }
+
+      //.............arrow function.......
+
+      // var sp = () =>{
+      //     console.log("hello arrow function")
+      // }
+
+      //.....anonymous function........
+      // let sl= function(){
+      //     console.log("anonymous function")
+      // }
+
+      // sl();
+
+      // function sh(a){
+      //     return 4;
+      // }
+      // console.log(sh(12))
+      // sh()
+
+      // let sb=(a) => a;{
+      //     console.log(sb(12))
+      // }
+
+      //.......IIFE(immediately invoked function expression) function...........
+
+      // (function(){console.log("hello world")})()
+
+      // !function(){console.log("hello iife ")}()
+
+      //...dome(document of object model)..............
+
+    //   function sm() {
+    // var demo =  document.getElementById("demo");
+    // demo.style.color = "red";
+    // demo.style.backgroundColor ="blue";
 
 
-        // 03 math operation
+    //   }
+      
 
-        // var num1 = 5;
-        // var num2 = 10;
-        // var total = num1 + num2;
-        // console.log(total);
+//......game ..........
 
-// 04 string operation ..................................................
-
-        // var num1 = "5";
-        // var num2 = "10";
-        // var total = num1 + num2;
-        // console.log(total);
-
-        //  var num1 = 50;
-        // var num2 = 20;
-        // var total = num1 ^ num2;
-        // console.log(total);
-
-        // var a = 5;
-        // var b = 10;
-
-        // a = a^b; //5+10 = 15
-        // b = a^b; // 15-5 = 10
-        // a = a^b; //10-5 = 5
-
-        // console.log(a,b);
+    //   var num1 = Math.round(Math.random()*10);
+    //   console.log(num1)
+    //   var guessnumber = parseInt(prompt("enter your num"))
+    //   var demo = document.getElementById("demo")
+    //   if(num1 === guessnumber){
+    //     demo.style.backgroundColor = "green"
+    //   }
+    //   else{
+    //     demo.style.backgroundColor = "red"
+    //   }
 
 
-        
-        // var a = 5;
-        // var b = 10;
+      var num1 = Math.round(Math.random()*10);
+      console.log(num1)
+      var guessnumber = parseInt(prompt("enter your num"))
+      var demo = document.getElementById("demo")
+      if(num1 === guessnumber){
+        demo.style.backgroundImage = `url('assets/images.png')`
+        // demo.style.borderWidth = "5px"
+        // demo.style.borderTop = "solid"
+        // demo.style.borderBottom = "ridge"
+        // demo.style.borderLeft = "groove"
+        // demo.style.borderRight = "blue"
+        // demo.style.border = "5px solid red"
 
-        // a = a+b; //5+10 = 15
-        // b = a-b; // 15-10 = 5
-        // a = a-b; //10-5 = 5
+        // demo.style.borderTopStyle = "groove"
+        // demo.style.borderTopWidth = "5px"
+        // demo.style.borderTopColor = "red"
+        demo.style.borderTop = "5px groove red"
 
-        // console.log(a,b);
+        //  demo.style.borderBottomStyle = "solid"
+        // demo.style.borderBottomWidth = "5px"
+        // demo.style.borderBottomColor = "blue"
+        demo.style.borderBottom = " solid 5px blue"
 
-        // var a = 5;
-        // var b = 10;
-        // [a,b]=[b,a]
-        // console.log(a,b);
+        //  demo.style.borderLeftStyle = "ridge"
+        // demo.style.borderLeftWidth = "5px"
+        // demo.style.borderLeftColor = "yellow"
+        demo.style.borderLeft = "ridge 5px yellow"
 
-        // data types .................................................................
-
-        // var name = "shahwaiz";
-        // console.log(name, typeof name);
-
-        // var age = 25;
-        // console.log(age, typeof age);
-
-        // var gender = true;
-        // console.log(gender, typeof gender);
-
-        // var avg = 2.4;
-        // console.log(avg, typeof avg);
-
-        // var bigint = 126521437632839724219646535n;
-        // console.log(bigint, typeof bigint);
-
-        // var bigint = 126521437632839724216657298733764287295;
-        // console.log(bigint, typeof bigint);
-
-        // var symbol = Symbol("symbol");
-        // console.log(symbol, typeof symbol);
-
-        // var arr = ["subhan", "shahwaiz"];
-        // console.log(arr, typeof arr);
-
-        // var object = {"name": "atif", "age": 38};
-        // console.log(object, typeof object);
-
-        // var und;
-        // console.log(und, typeof und);
-
-        // var nul = null;
-        // console.log(nul, typeof nul);
-
-        // take input from user ...................................................................
-
-        // var name = prompt("enter your name");
-        // document.write(name);
-
-        // var name = "shahwaiz";
-        // var name1 = prompt("enter your name ", name);
-        // console.log(name1, typeof name1);
-
-        //  var age = 25;
-        //  var age1 = prompt("enter your age ", age);
-        // console.log(age1, typeof age1);
-
-        // var gender = true;
-        // var gender1 = prompt("enter your gender ", gender);
-        // console.log(gender1, typeof gender1);
-
-        //  var avg = 2.4;
-        //  var avg1 = prompt("enter your avg ", avg);
-        // console.log(avg1, typeof avg1);
-
-        //  var bigint = 126521437632839724219646535n;
-        //   var bigint1 = prompt("enter your bigint ", bigint);
-        // console.log(bigint1, typeof bigint1);
-
-        //  var bigint = 126521437632839724216657298733764287295;
-        //  var bigint1 = prompt("enter your bigint ", bigint);
-        // console.log(bigint1, typeof bigint1);
+        //  demo.style.borderRightStyle = "dotted"
+        // demo.style.borderRightWidth = "5px"
+        // demo.style.borderRightColor = "green"
+        demo.style.borderRight = "dotted 5px green"
 
 
-        // var arr = ["subhan", "shahwaiz"];
-        // var arr1 = prompt("enter your arr", arr);
-        // console.log(arr1, typeof arr1);
-
-        //   var object = {"name": "atif", "age": 38};
-        //   var object1 = prompt("enter your object",object)
-        // console.log(object1, typeof object1);
-
-        // var und;
-        // var und1 = prompt("enter your arr", und);
-        // console.log(und1, typeof und1);
-
-        // var nul = null;
-        //  var nul1 = prompt("enter your arr", nul)
-        // console.log(nul1, typeof nul1);
-
-        //   var symbol = Symbol("^");
-        //    var symbol1 = prompt("enter your symbol", symbol);
-        // console.log(symbol1, typeof symbol1);
+      }
+      else{
+        demo.style.backgroundColor = "red"
+        demo.style.borderRadius = "15px"
+      }
 
 
-        // 05 type casting .............................................................
-
-        // var num1 = prompt("enter your number");
-        // num1 = parseInt(num1);
-        //  num1 = parseFloat(num1);
-        //   num1 = Number(num1);
-        // console.log(num1, typeof num1);
-
-        //05 if else if else condition.............................................................................
-        
-        // var marks = 80;
-
-        // if(marks ===90){
-        //     console.log("your marks is 90");
-        // }
-        // else if (marks === 80){
-        //     console.log("your marks s not 90");
-        // }
-            
-        // else{
-        //     console.log("your marks is not 90");
-        // }
-
-        // var marks = 80;
-
-        // if (marks >= 90 && marks <= 100 ){
-        //     console.log("your grade is A");
-        // }
-        // else if(marks > 100 ){
-        //     console.log("you marks is could not be more than 100")
-        // }
-        // else if(marks >= 80 && marks <= 90  ){
-        //     console.log("your grade is B")
-        // }
-
-        //............vanila...
-
-        // var marks = 91;
-        // var age = 20;
-
-        // if (marks > 90 || age < 19){
-        //     console.log("you have your exam")
-        // }
-
-        //.......ecma............
-
-        // var marks = 80;
-        // (marks = 90) & console.log("you have 90 marks")
-
-        //  (marks === 90) ? console.log("you have passed ") : console.log("you have not 90 marks ")
-
-        //.............test........................................
-
-        var education =  prompt ("enter education");
-        education = Number(education);
-        var height = prompt("enter height");
-        height = Number(height);
-        var age = prompt("enter age");
-        age = Number(age);
-
-        if (education === 12 || height === 5.8 ){
-            console.log("you have passed ");
-        }
-        else if(age === 18 || height === 5.8 ){
-            console.log("you have passed ");
-        }
-        else if(education === 12 || age === 18 ){
-            console.log("you have passed ");
-        }
-        else {
-            console.log("you have fails ");
-        }
-
-
-        
 
     </script>
-
-</body>
+  </body>
 </html>
